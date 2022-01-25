@@ -1,0 +1,24 @@
+.fan {
+  animation: runFan 1s 0s linear infinite;
+}
+div {
+  text-align: center;
+}
+button {
+  border-radius: 10%;
+  padding: 16px;
+  font-size: 20px;
+  min-width: 120px;
+  background-color: white;
+}
+button + button {
+  margin-left: 12px;
+}
+@keyframes runFan {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
